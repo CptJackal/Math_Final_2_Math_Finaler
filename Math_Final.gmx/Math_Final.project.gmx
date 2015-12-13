@@ -6,25 +6,26 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_ship</sprite>
-    <sprite>sprites\spr_ball</sprite>
-    <sprite>sprites\spr_xvector</sprite>
+    <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
     <sprite>sprites\sprite3</sprite>
-    <sprite>sprites\spr_yvector</sprite>
-    <sprite>sprites\spr_plane</sprite>
+    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_ship</object>
-    <object>objects\obj_ball</object>
-    <object>objects\obj_xvector</object>
-    <object>objects\obj_yvector</object>
+    <object>objects\ship</object>
+    <object>objects\object1</object>
+    <object>objects\object2</object>
+    <object>objects\object3</object>
     <object>objects\object4</object>
-    <object>objects\obj_plane</object>
-    <object>objects\obj_gamecontrol</object>
+    <object>objects\object5</object>
+    <object>objects\object6</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\stage</room>

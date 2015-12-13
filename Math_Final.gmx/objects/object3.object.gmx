@@ -28,6 +28,8 @@
             <string>speedX = aimX;
 speedY = aimY;
 
+stepNum = 1;
+
 image_yscale = (-1)*speedY;
 
 
@@ -55,9 +57,15 @@ image_yscale = (-1)*speedY;
           <argument>
             <kind>1</kind>
             <string>x = x + speedX;
-y = y + speedY;
+y = y + speedY + (1*(stepNum^2));
 
-image_yscale = (-1)*speedY;
+stepNum++;
+
+if(y &gt;= 900){
+    instance_destroy();
+}
+
+image_yscale = (-1)*(speedY + (1*(stepNum^2)));
 
 </string>
           </argument>
