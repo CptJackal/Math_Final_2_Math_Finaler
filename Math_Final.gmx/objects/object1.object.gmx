@@ -63,6 +63,7 @@ y = y + speedY + (1*(stepNum^2));
 stepNum++;
 
 if(y &gt;= 900){
+    balls--;
     instance_destroy();
 }
 </string>

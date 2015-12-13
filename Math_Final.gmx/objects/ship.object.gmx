@@ -25,13 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar powers;
-powers = 10;
+            <string>health = 5;
+globalvar powers;
+powers = 20;
 globalvar angle;
 angle = 135;
 globalvar aimX;
 globalvar aimY;
 stepNum = 1;
+globalvar balls;
+balls = 0;
 
 </string>
           </argument>
@@ -39,6 +42,62 @@ stepNum = 1;
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>713</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_life</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+          <argument>
+            <kind>1</kind>
+            <string>Lives: </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>703</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+          <argument>
+            <kind>1</kind>
+            <string>Score: </string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,7 +116,10 @@ stepNum = 1;
             <kind>1</kind>
             <string>if keyboard_check_released(vk_space)
    {
+   if(balls&lt;4){
    instance_create(x, y, object1);
+   balls++;
+   }
    }
 if keyboard_check(ord("A"))
    {
@@ -75,7 +137,7 @@ if keyboard_check(ord("D"))
    }
 if keyboard_check(ord("W"))
    {
-   if(powers&lt;40)
+   if(powers&lt;35)
    {
     powers++;
    }
@@ -91,15 +153,14 @@ if keyboard_check(ord("S"))
 aimX = powers*dsin(angle);
 aimY = powers*dcos(angle);
 
-newPlane = 5;
+stepNum++;
 
-if (stepNum == newPlane)
+if ((stepNum % 100) = 0)
 {
-    instance_create(x, y, object6);
-    newPlane = newPlane+irandom_range(10, 50);
+    instance_create(2000, (irandom_range(200,800)), object6);
 }
 
-stepNum++;
+
 </string>
           </argument>
         </arguments>
