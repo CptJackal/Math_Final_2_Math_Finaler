@@ -25,24 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string>globalvar powers;
-powers = 10;
-=======
             <string>health = 5;
 globalvar powers;
 powers = 20;
->>>>>>> parent of 10bcefe... Revert "HUD update"
 globalvar angle;
 angle = 135;
 globalvar aimX;
 globalvar aimY;
-<<<<<<< HEAD
-=======
 stepNum = 1;
 globalvar balls;
 balls = 0;
->>>>>>> parent of 10bcefe... Revert "HUD update"
 
 </string>
           </argument>
@@ -68,15 +60,11 @@ balls = 0;
             <kind>1</kind>
             <string>if keyboard_check_released(vk_space)
    {
-<<<<<<< HEAD
-   instance_create(x, y, object1);
-=======
    if(balls&lt;4){
    instance_create(x, y, object1);
    balls++;
    draw_text(240, 0, "Cannonball Speed: " + string(direction));
    }
->>>>>>> parent of 10bcefe... Revert "HUD update"
    }
 if keyboard_check(ord("A"))
    {
@@ -94,11 +82,7 @@ if keyboard_check(ord("D"))
    }
 if keyboard_check(ord("W"))
    {
-<<<<<<< HEAD
-   if(powers&lt;40)
-=======
    if(powers&lt;35)
->>>>>>> parent of 10bcefe... Revert "HUD update"
    {
     powers++;
    }
@@ -110,12 +94,6 @@ if keyboard_check(ord("S"))
     powers--;
    }
    }
-<<<<<<< HEAD
-  
-   
-aimX = powers*dsin(angle);
-aimY = powers*dcos(angle);
-=======
 
 aimX = powers*dsin(angle);
 aimY = powers*dcos(angle);
@@ -152,7 +130,6 @@ if ((stepNum % 100) = 0)
             <kind>1</kind>
             <string>r = sqrt((aimX*aimX)+(aimY*aimY))
 draw_text(240, 0, "Cannonball Velocity: " + string(r) + "m/s at angle of " + string(angle-95));
->>>>>>> parent of 10bcefe... Revert "HUD update"
 </string>
           </argument>
         </arguments>

@@ -55,22 +55,13 @@ instance_create(x,y,object5);
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string>
-
-x = x + speedX;
-=======
             <string>x = x + speedX;
->>>>>>> parent of 10bcefe... Revert "HUD update"
 y = y + speedY + (1*(stepNum^2));
 
 stepNum++;
 
 if(y &gt;= 900){
-<<<<<<< HEAD
-=======
     balls--;
->>>>>>> parent of 10bcefe... Revert "HUD update"
     instance_destroy();
 }
 </string>
