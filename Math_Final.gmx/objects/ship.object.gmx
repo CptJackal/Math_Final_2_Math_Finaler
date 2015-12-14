@@ -59,9 +59,12 @@ stepNum = 1;
    {
    instance_create(x, y, object1);
 <<<<<<< HEAD
+<<<<<<< HEAD
    balls++;
    draw_text(240, 0, "Cannonball Speed: " + string(direction));
    }
+=======
+>>>>>>> parent of 990d861... Big update
 =======
 >>>>>>> parent of 990d861... Big update
    }
@@ -106,6 +109,7 @@ if (stepNum == newPlane)
 }
 
 stepNum++;
+<<<<<<< HEAD
 </string>
           </argument>
         </arguments>
@@ -130,6 +134,8 @@ stepNum++;
             <kind>1</kind>
             <string>r = sqrt((aimX*aimX)+(aimY*aimY))
 draw_text(240, 0, "Cannonball Velocity: " + string(r) + "m/s at angle of " + string(angle-95));
+=======
+>>>>>>> parent of 990d861... Big update
 </string>
           </argument>
         </arguments>
