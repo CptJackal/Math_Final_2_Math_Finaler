@@ -10,15 +10,43 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\sprite3</sprite>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <sprite>sprites\spr_yvector</sprite>
+    <sprite>sprites\spr_plane</sprite>
+=======
+    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\sprite5</sprite>
+>>>>>>> refs/remotes/origin/master
+=======
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\sprite6</sprite>
+>>>>>>> origin/plane-collision
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <object>objects\obj_ship</object>
+    <object>objects\obj_ball</object>
+    <object>objects\obj_xvector</object>
+    <object>objects\obj_yvector</object>
+    <object>objects\object4</object>
+    <object>objects\obj_plane</object>
+    <object>objects\obj_gamecontrol</object>
+=======
+    <object>objects\ship</object>
+    <object>objects\object1</object>
+    <object>objects\object2</object>
+    <object>objects\object3</object>
+    <object>objects\object4</object>
+    <object>objects\object5</object>
+>>>>>>> refs/remotes/origin/master
+=======
     <object>objects\ship</object>
     <object>objects\object1</object>
     <object>objects\object2</object>
@@ -26,6 +54,7 @@
     <object>objects\object4</object>
     <object>objects\object5</object>
     <object>objects\object6</object>
+>>>>>>> origin/plane-collision
   </objects>
   <rooms name="rooms">
     <room>rooms\stage</room>
