@@ -27,6 +27,7 @@
             <kind>1</kind>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <string>stepNum = 1;
 speedP = irandom_range(2,8);
 dead = false;
@@ -148,6 +149,12 @@ instance_destroy();
 draw_text(900, 0, "Score: " + string(score));
 draw_text(900, 20, "Health: " + string(health));
 
+=======
+            <string>y = 2000;
+x = irandom_range(200, 900);
+
+speed = irandom_range(3, 8);
+>>>>>>> parent of 990d861... Big update
 =======
             <string>y = 2000;
 x = irandom_range(200, 900);
